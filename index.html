@@ -14,12 +14,38 @@
             body {
                 background-color: darkgray;
             }
-            p.center{
+            h1 {
                 text-align: center;
+            }
+            h2 {
+                text-align: center;
+            }
+            img {
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+            }
+            #myh1 {
+             width: auto;
+             height: auto;
+             background: red;
+             animation: mymove 5s infinite;
+            }
+
+            @keyframes mymove {
+             from {background-color: red;}
+             to {background-color: blue;}
+            }
+
+
+            iframe {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
             </style>
 	</head>
-	<body>
+	<body id="css-zen-garden">
 		<header>
             <h1>My Favorite movie scenes</h1>
             <p>Spoiler Warning!!!!</p>
@@ -35,7 +61,7 @@
 				</section>
 				<section>
 
-					<h2>Ace Ventura, Pet detective intro</h2>
+					<h2>Ace Ventura, Pet Detective - Intro</h2>
 					<p>When I was a kid, I loved this intro.  It may be dated, but I will never forget how hard I laughed at this with my friends</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/UOJiEgxt7RY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</section>
@@ -69,7 +95,7 @@
                         <button onclick="makeNormal()">Normal</button>
                         <br><br>
                         <video id="video1" width="420">
-                          <source src="Pizza Delivery Scene _ Deadpool.mp4" type="video/mp4">
+                          <source src="PizzaDeadpool.mp4" type="video/mp4">
                            Your browser does not support HTML5 video.
                         </video>
                       </div> 
@@ -99,9 +125,13 @@
                       
                       <p>Video courtesy of TM & © Disney / 20th Century Studios</p>
                 </section>
-                <p class="center">Thanks for taking a look.  I hope check out these movies, if you haven't seen them before.</p>
-                <img src="JC.jpg" alt="Jackie Chan thumbs up"/> 
-			</article>
+                <div id="myh1">
+                <h1 class="center">Thanks for taking a look!</h1>
+                </div>
+                <p> I hope you check out these movies, if you haven't seen them before.</p>
+                <img src="JC.jpg" alt="Jackie Chan thumbs up" class="center"/> 
+                
+            </article>
 		</main>
 
 		<footer>
