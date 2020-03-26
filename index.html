@@ -43,7 +43,48 @@
 					<h2>The Other Guys - I'm a peacock</h2>
 					<p>I did not see Mark Walburg as a comedy star, but I feel like he pulls it out nicely. Especially when a scene can become a meme like this scene becomes.</p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/iV6539XsWrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</section>
+                </section>
+                
+                <section>
+                    <h2> Deadpool - Pizza Delivery Guy</h2>
+                    <p>I have a man crush on Ryan Reyonds and love his portrayl of Deadpool. I appreciate the character development that get you on their side, to root for them.  They totally got me.</p>
+                    <div style="text-align:center"> 
+                        <button onclick="playPause()">Play/Pause</button> 
+                        <button onclick="makeBig()">Big</button>
+                        <button onclick="makeSmall()">Small</button>
+                        <button onclick="makeNormal()">Normal</button>
+                        <br><br>
+                        <video id="video1" width="420">
+                          <source src="Pizza Delivery Scene _ Deadpool.mp4" type="video/mp4">
+                           Your browser does not support HTML5 video.
+                        </video>
+                      </div> 
+                      
+                      <script> 
+                      var myVideo = document.getElementById("video1"); 
+                      
+                      function playPause() { 
+                        if (myVideo.paused) 
+                          myVideo.play(); 
+                        else 
+                          myVideo.pause(); 
+                      } 
+                      
+                      function makeBig() { 
+                          myVideo.width = 560; 
+                      } 
+                      
+                      function makeSmall() { 
+                          myVideo.width = 320; 
+                      } 
+                      
+                      function makeNormal() { 
+                          myVideo.width = 420; 
+                      } 
+                      </script> 
+                      
+                      <p>Video courtesy of TM & © Disney / 20th Century Studios</p>
+                </section>
                 <p>Thanks for taking a look.  I hope check out these movies, if you haven't seen them before.</p>
                 <img src="JC.jpg" alt="Jackie Chan thumbs up"/> 
 			</article>
